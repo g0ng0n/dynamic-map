@@ -1,17 +1,17 @@
-# Project: Gonnet Map
-# CodeName: p5-gonnet-map
+# Project: Dynamic Map
+# CodeName: dynamic-map-p5
 
 ## Description
-    A single page application featuring a map of my neighborhood.
-    this map includes highlighted locations, third-party data about those locations
+    A single page application featuring a map of a neighborhood.
+    this map includes highlighted locations, and Local Information that we get from Foursquare
     and various ways to browse the content.
 
 ## Understand the purpose of the main files
  * index.html  - This is the main file where the information and the map is render dynamically
  * package.json - This is the file where the dependencies of the project are defined for NodeJs and NPM
  * Gruntfile.js - the Grunf config file, to execute the automate task
- * JS FILES -> TO BE DEFINED
- * CSS FILES -> TO BE DEFINED
+ * apps.js - This is the file where I add the map initialization, the viewmodel, the model and the call to the foursquare API 
+
 
 
 ## Running the project!
