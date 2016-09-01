@@ -48,14 +48,6 @@ body,
     display: block;
 }
 
-.dropdown-menu {
-    padding: 0;
-}
-
-.dropdown-menu>li>a {
-    padding: 10px;
-}
-
 @media (max-width: 767px) {
     .navbar-nav .open .dropdown-menu > li > a {
         padding: 0;
