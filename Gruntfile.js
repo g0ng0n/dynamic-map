@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         // See: http://www.jshint.com/docs/
         jshint: {
             all: {
-                src: 'js/*.js',
+                src: 'js/app.js',
                 options: {
                     bitwise: true,
                     camelcase: true,
@@ -26,13 +26,14 @@ module.exports = function(grunt) {
                     undef: false,
                     unused: true,
                     trailing: true,
-                    maxlen: 120
+                    maxlen: 120,
+                    reporterOutput: ""
                 }
             }
         },
         jsdoc : {
             dist : {
-                src: ['js/*.js', 'js/*.js'],
+                src: ['js/*.js', 'js/app.js'],
                 options: {
                     destination: 'doc'
                 }
