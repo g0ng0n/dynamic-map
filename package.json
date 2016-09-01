@@ -1,0 +1,30 @@
+{
+  "name": "p5-gonnet-map",
+  "version": "1.0.0",
+  "description": "a dynamic map from the place where I Live",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-responsive-images": "^0.1.4",
+    "grunt-contrib-watch": "0.1.4",
+    "grunt-jsdoc": "0.6.8"
+  },
+  "dependencies": {
+    "grunt-responsive-images": "^0.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g0ng0n/p5-gonnet-map.git"
+  },
+  "author": "Gonzalo Gisbert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g0ng0n/p5-gonnet-map/issues"
+  },
+  "homepage": "https://github.com/g0ng0n/p5-gonnet-map#readme"
+}

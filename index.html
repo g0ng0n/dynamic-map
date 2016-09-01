@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dynamic Nijmegen Map</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class='navbar navbar-default navbar-fixed-top background-nav'>
+    <div class='container'>
+        <div class='navbar-header'>
+            <a class='navbar-brand' href='#'>
+                <span class='title'>Nijmegen Map</span>
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <section class='row'>
+
+        <div id='search' class='col-sm-3 no-left-padding '>
+            <select data-bind="options: typesOptions, value: filterSelection, optionsCaption: 'Choose a Type of Place'"></select>
+
+            <div data-bind='foreach: filterResults' class='list-group shift-left side-locations'>
+                <a href='#' class='list-group-item' data-bind='text: name, "click": $root.clickHandler'></a>
+            </div>
+
+
+         </div>
+        <div id='map' class='col-sm-9 map-canvas no-right-padding' ></div>
+
+     </section>
+ </div>
+     <!-- JavaScript Imports
+     ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFYR5VC7fuBYsMBz3JjSJlETUW2e5sJRA&callback=initMap" async defer onerror="initMapLoadError()"></script>
+
+  </body>
+</html>
